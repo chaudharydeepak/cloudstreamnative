@@ -1,0 +1,13 @@
+spring.cloud.stream:
+  default-binder: kafka
+  kafka:
+    binder:
+      brokers: localhost:9092
+  function.definition: appConsumer;
+  bindings:
+    produce-out-0:
+      destination: persons
+    appConsumer-in-0:
+      destination: persons
+      group: persongroup
+      concurrency: 1

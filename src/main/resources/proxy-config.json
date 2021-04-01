@@ -1,0 +1,6 @@
+[
+  [
+    "org.springframework.cloud.stream.annotation.EnableBinding",
+    "org.springframework.core.annotation.SynthesizedAnnotation"
+  ]
+]
