@@ -13,7 +13,7 @@ public class Consumer {
 
     @Bean
     public java.util.function.Consumer<Person> appConsumer() {
-        log.info("***** initialied appConsumer *****");
-        return person -> log.info("Data received from customer-1..." + person);
+        log.info("***** initialized appConsumer *****");
+        return person -> log.info("Data received: {}", person);
     }
 }

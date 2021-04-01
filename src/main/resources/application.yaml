@@ -11,3 +11,14 @@ spring.cloud.stream:
       destination: persons
       group: persongroup
       concurrency: 1
+
+logging:
+  level:
+    root: INFO
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor.sql.BasicBinder: TRACE
+      # aspectj: TRACE
+      springframework: TRACE

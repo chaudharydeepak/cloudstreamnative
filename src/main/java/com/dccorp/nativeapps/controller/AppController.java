@@ -18,8 +18,7 @@ public class AppController {
     StreamBridge streamBridge;
 
     @PostMapping("/person")
-    public void create(@RequestBody Person person)
-    {
+    public void create(@RequestBody Person person) {
         log.info("***** getting ready to send: {} *****", person);
         streamBridge.send("produce-out-0", person);
         log.info("***** finished sending *****");

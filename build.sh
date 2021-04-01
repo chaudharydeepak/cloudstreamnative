@@ -2,7 +2,7 @@
 #!/usr/bin/env bash
 
 printf "***** BUILDING APP *****\n"
-mvn clean -Pnative-image package > /dev/null
+mvn clean -U I-Pnative-image package > /dev/null
 
 printf "\n***** STARTING KAFKA INFRASTRUCTURE *****\n"
 docker-compose up -d
